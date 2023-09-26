@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Grotesk:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.test{
+  @apply h-[30vh] w-[70vh] bg-purple-500
+}
+
+li{
+ @apply font-ph min-w-[280px] text-[#264736] text-[1.1vw];
+}
+
+.certificateIuser{
+  @apply font-ro text-[12px] text-[#264736]/90
+}
