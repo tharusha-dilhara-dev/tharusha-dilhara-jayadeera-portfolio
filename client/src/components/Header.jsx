@@ -38,7 +38,7 @@ function Header() {
           <Brightness4Icon className='cursor-pointer  hover:text-[#254536] ' />
         </div>
       </div>
-      {scrollery <= 0 ? null : <ArrowCircleUpIcon className='fixed bottom-5 right-5' />}
+      {scrollery <= 0 ? null : <ArrowCircleUpIcon onClick={scrollToTop} className='fixed bottom-5 right-5' />}
     </>
   )
 }
