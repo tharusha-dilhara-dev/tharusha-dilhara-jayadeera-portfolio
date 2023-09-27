@@ -5,9 +5,16 @@ const projectschema=new mongoose.Schema({
         type:String,
         required:true
     },
-    des:{
+    status:{
         type:String,
         required:true
+    },
+    category:{
+        type:String,
+        required:true
+    },
+    des:{
+        type:String
     },
     gitlink:{
         type:String,
