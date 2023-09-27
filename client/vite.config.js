@@ -6,6 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": "https://tdjayadeeraapi-three.vercel.app/",
+      "/api": "http://localhost:3000/",
     }  
   } ,
   plugins: [react()],
