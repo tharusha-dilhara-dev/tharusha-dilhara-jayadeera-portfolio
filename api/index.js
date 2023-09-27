@@ -3,9 +3,6 @@ import mongoose from "mongoose";
 import getdata from './routes/getdata.routes.js';
 import cors from 'cors';
 
-
-
-
 mongoose.connect("mongodb+srv://tdjayadeera:lXnlQJ1RfyEwwL1X@cluster0.dxd3upl.mongodb.net/tdjayadeera?retryWrites=true&w=majority")
 .then(()=>{
     console.log('connect to database')
@@ -17,8 +14,6 @@ mongoose.connect("mongodb+srv://tdjayadeera:lXnlQJ1RfyEwwL1X@cluster0.dxd3upl.mo
 
 const allowedOrigins = [
     "http://localhost:5173/",
-    "https://tdjayadeera.vercel.app/",
-    "https://tdjayadeera.vercel.app/"
 ];
 
 const app=express();
