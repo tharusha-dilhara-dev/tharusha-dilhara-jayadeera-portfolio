@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import getdata from './routes/getdata.routes.js';
 import cors from 'cors';
 
-mongoose.connect("mongodb+srv://tdjayadeera:lXnlQJ1RfyEwwL1X@cluster0.dxd3upl.mongodb.net/tdjayadeera?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://tdjayadeera:lXnlQJ1RfyEwwL1X@cluster0.dxd3upl.mongodb.net/portfolio?retryWrites=true&w=majority")
 .then(()=>{
     console.log('connect to database')
 })
