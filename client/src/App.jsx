@@ -28,11 +28,15 @@ function App() {
       <Header  />
       <HeroSection />
       <Services />
+      <section id="about"></section>
       <About/>
+      <section id="certification"></section>
       <Certificate/>
+      <section id="project"></section>
       <Project  />
+      <section id="contact"></section>
       <ContactUS/>
-      <GithubCon/>
+      <GithubCon/>  
       <Footer/>
       
     </div>

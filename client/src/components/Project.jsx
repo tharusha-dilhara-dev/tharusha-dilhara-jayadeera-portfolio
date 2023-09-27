@@ -46,7 +46,7 @@ function Project() {
     console.log(projectData);
 
     return (
-        <div className='lg:px-[100px] flex flex-col items-center lg:block   '>
+        <section  id="project" className='lg:px-[100px] flex flex-col items-center lg:block   '>
             <p className=' font-ph text-[28px]'>
                 Latest Project That Recently Done
             </p>
@@ -71,7 +71,7 @@ function Project() {
 
 
             </div>
-        </div>
+        </section>
     )
 }
 

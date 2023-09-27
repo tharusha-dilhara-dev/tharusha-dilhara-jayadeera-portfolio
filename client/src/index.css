@@ -14,3 +14,12 @@ li{
 .certificateIuser{
   @apply font-ro text-[12px] text-[#264736]/80
 }
+
+
+.active {
+  font-weight: bold !important;
+}
+
+.ac{
+  color: blueviolet !important;
+}
