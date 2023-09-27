@@ -18,6 +18,7 @@ mongoose.connect("mongodb+srv://tdjayadeera:lXnlQJ1RfyEwwL1X@cluster0.dxd3upl.mo
 const allowedOrigins = [
     "http://localhost:5173/",
     "https://tdjayadeera.vercel.app/",
+    "https://tdjayadeera.vercel.app/"
 ];
 
 const app=express();
