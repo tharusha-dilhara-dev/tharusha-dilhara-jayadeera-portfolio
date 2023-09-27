@@ -22,8 +22,8 @@ function HeroSection() {
       </div>
       <motion.img initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }} className='h-[50vh] z-40    lg:h-[80vh] ' src={tharusha} alt="" />
       <motion.div initial={{ opacity: 0,bottom:-30 }} animate={{ opacity: 1,bottom:30 }} transition={{ duration: 3 }} className='absolute z-40 flex gap-3 p-1 mt-10 bg-white border rounded-full font-ph bottom-10 border-1'>
-        <div className='text-white w-[130px] py-2 flex gap-x-2 items-center justify-center  rounded-full  bg-[#0C2634]'>Portfolio <NorthEastIcon /></div>
-        <div className='border borser-1 text-black border-black w-[120px] py-2 flex items-center justify-center px-4 rounded-full '>Hire Me</div>
+        <a href='https://drive.google.com/uc?export=download&id=13TARLQwcHt8Nhdu3fYSCKTlw0wsqzmKq' className='text-white w-[130px] py-2 flex gap-x-2 items-center justify-center  rounded-full  bg-[#0C2634]'>Portfolio <NorthEastIcon /></a>
+        <a href='https://www.linkedin.com/in/tharusha-dilhara/' target="_blank" className='border borser-1 text-black border-black w-[120px] py-2 flex items-center justify-center px-4 rounded-full '>Hire Me</a>
       </motion.div>
     </div>
   )

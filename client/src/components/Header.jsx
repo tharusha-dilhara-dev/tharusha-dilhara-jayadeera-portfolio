@@ -35,7 +35,7 @@ function Header() {
         </div>
         <div className='flex items-center gap-3'>
           <MenuIcon className='visible sm:invisible' />
-          <Brightness4Icon className='cursor-pointer  hover:text-[#254536] ' />
+          {/* <Brightness4Icon className='cursor-pointer  hover:text-[#254536] ' /> */}
         </div>
       </div>
       {scrollery <= 0 ? null : <ArrowCircleUpIcon onClick={scrollToTop} className='fixed bottom-5 right-5' />}
