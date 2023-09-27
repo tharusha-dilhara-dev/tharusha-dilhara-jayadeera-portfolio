@@ -62,7 +62,7 @@ export const getcertificate = (req, res) => {
         [
             {
                 name: 'Fundamentals of Red Hat Enterprise Linux ',
-                organization: 'coursera',
+                organization: 'cousera',
             },
             {
                 name: 'Artificial Intelligence on Microsoft Azure ',
@@ -70,7 +70,7 @@ export const getcertificate = (req, res) => {
             },
             {
                 name: 'APIs in Node.js: Write a RESTful API Backend Application ',
-                organization: 'coursera',
+                organization: 'coursea',
             },
             {
                 name: 'Docker for absolute beginners ',
