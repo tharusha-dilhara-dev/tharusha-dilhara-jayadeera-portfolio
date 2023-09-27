@@ -14,9 +14,15 @@ mongoose.connect("mongodb+srv://tdjayadeera:lXnlQJ1RfyEwwL1X@cluster0.dxd3upl.mo
     console.log(err);
 })
 
+
+const allowedOrigins = [
+    "http://localhost:5173/",
+    "http://example.com",
+];
+
 const app=express();
 app.use(cors({
-    origin:"http://localhost:5173/"
+    origin:allowedOrigins
 }));
 
 
