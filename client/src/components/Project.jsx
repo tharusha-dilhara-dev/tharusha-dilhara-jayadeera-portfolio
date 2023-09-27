@@ -15,7 +15,7 @@ function Project() {
     const [activeButton, setActiveButton] = useState('');
 
     useEffect(() => {
-        axios.get('/api/project')
+        axios.get('https://tdjayadeerav2.vercel.app/api/project')
             .then((response) => {
                 setProjectData(response.data);
                 setFilteredData(response.data);

@@ -9,7 +9,7 @@ function Certificate() {
 
     useEffect(() => {
         // Replace 'your-api-endpoint-here' with your API endpoint
-        axios.get('/api/certificate')
+        axios.get('https://tdjayadeerav2.vercel.app/api/certificate')
             .then((response) => {
                 setCertifications(response.data);
             })
@@ -30,7 +30,7 @@ function Certificate() {
                         </li>
                     ))}
                 </ul>
-                <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8  animate-infinite-scroll" aria-hidden="true">
+                <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8  animate-infinite-scroll" aria-hidden="true">
 
                     {certifications.map((cert, index) => (
                         <li key={index}>
