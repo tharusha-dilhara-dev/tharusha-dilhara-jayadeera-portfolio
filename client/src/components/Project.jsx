@@ -43,7 +43,7 @@ function Project() {
     };
 
 
-    console.log(projectData);
+ 
 
     return (
         <section  id="project" className='lg:px-[100px] flex flex-col items-center lg:block   '>
