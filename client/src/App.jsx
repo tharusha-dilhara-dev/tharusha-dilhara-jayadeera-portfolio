@@ -11,6 +11,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS CSS
 import ContactUS from './components/ContactUS'
 import Certificate from './components/Certificate'
+import { Route, Routes } from "react-router-dom"
+import Pagesnavbar from './components/Pagesnavbar'
+import Fullcertification from './components/Fullcertification'
 
 
 function App() {
@@ -19,27 +22,40 @@ function App() {
     // Initialize AOS when the component mounts
     AOS.init();
   }, []);
-  
-  
+
+
   return (
-   
-    <div className='flex flex-col gap-10 ' >
+
+    <>
+    <Routes>
+      <Route path="/" element={
+        <div className='flex flex-col gap-10 ' >
+        <Header />
+        <HeroSection />
+        <Services />
+        <section id="about"></section>
+        <About />
+        <section id="certification"></section>
+        <Certificate />
+        <section id="project"></section>
+        <Project />
+        <section id="contact"></section>
+        <ContactUS />
+        <GithubCon />
+        <Footer />
+      </div>
+      } />
+      <Route path="/certification" element={<div><Pagesnavbar/><Fullcertification/></div>} />
+      <Route path="/project" element={<Project/>} />
       
-      <Header  />
-      <HeroSection />
-      <Services />
-      <section id="about"></section>
-      <About/>
-      <section id="certification"></section>
-      <Certificate/>
-      <section id="project"></section>
-      <Project  />
-      <section id="contact"></section>
-      <ContactUS/>
-      <GithubCon/>  
-      <Footer/>
+    </Routes>
+    
+
       
-    </div>
+
+
+
+    </>
   )
 }
 

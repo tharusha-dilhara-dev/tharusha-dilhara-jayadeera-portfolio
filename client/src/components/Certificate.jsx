@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import axios from 'axios'; // Import Axios
+import { Link } from 'react-router-dom';
 
 function Certificate() {
 
@@ -21,7 +22,7 @@ function Certificate() {
 
     return (
         <div className='lg:px-[100px]'>
-            <div className='flex items-center justify-between font-ph text-[28px]'>Latest certifications done recently <div className='text-[14px] text-slate-500'>more <ArrowForwardIosIcon style={{ fontSize: 14 }} /></div>  </div>
+            <div className='flex items-center justify-between font-ph text-[28px]'>Latest certifications done recently <Link to='certification'><div className='text-[14px] text-slate-500'>more <ArrowForwardIosIcon style={{ fontSize: 14 }} />   </div> </Link>   </div>
             <div className="pt-10 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
                 <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8  animate-infinite-scroll">
                     {certifications.map((cert, index) => (
